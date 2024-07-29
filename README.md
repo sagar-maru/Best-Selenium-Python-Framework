@@ -67,7 +67,7 @@ This framework is designed to streamline your test automation process, making it
 
 2. Navigate to the project directory:
     ```bash
-    cd selenium_framework
+    cd Best-Selenium-Python-Framework
     ```
 
 3. Install the dependencies:
