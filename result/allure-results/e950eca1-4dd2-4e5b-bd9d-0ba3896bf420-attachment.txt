@@ -1,0 +1,1 @@
+WARNING  charset_normalizer:api.py:121 Trying to detect encoding from a tiny portion of (13) byte(s).

@@ -1,13 +1,10 @@
 import configparser
 import os
 
-config = configparser.ConfigParser()
+def read_config():
+    config = configparser.ConfigParser()
+    config_path = os.path.abspath(os.path.join(os.path.join(os.path.dirname(__file__), os.pardir),'config.ini'))
+    # print(config_path)
+    config.read(config_path)
 
-# Ensure the config.ini file is located in the project root directory
-config_path = os.path.join(os.path.dirname(__file__), '../config.ini')
-print(config_path)
-config.read(config_path)
-
-# Configuration settings
-BROWSER = config['default'].get('browser', 'chrome')
-HEADLESS = config['default'].getboolean('headless', False)
+    return config['DEFAULT']
